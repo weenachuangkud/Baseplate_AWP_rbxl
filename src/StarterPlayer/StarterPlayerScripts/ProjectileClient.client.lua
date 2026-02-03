@@ -97,12 +97,17 @@ ProjectileEvent:Connect(function(
 			end
 		end
 
-		AWP_Tool:SetAttribute("CanShoot", false)
+		local WeaponData = AWP_Tool:FindFirstChild("WeaponData")
+		if not WeaponData then
+			return
+		end
+		
+		WeaponData:SetAttribute("State", "BOLT_CYCLING")
 		task.spawn(function()
 			local Boltps = PlaySFX(BoltSFX, Handle)
 			Boltps.Ended:Wait()
 			Boltps:Destroy()
-			AWP_Tool:SetAttribute("CanShoot", true)
+			WeaponData:SetAttribute("State", "IDLE")
 		end)
 	end
 
