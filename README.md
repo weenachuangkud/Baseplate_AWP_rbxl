@@ -2,6 +2,7 @@
 
 - Hard-coded AWP gun system by Mawin_CK
 ### Libraries used
+- [FastCast2 v0.0.5](https://github.com/weenachuangkud/FastCast2)
 - [InputModule](https://github.com/weenachuangkud/InputModuleRoblox)
 - [Jolt](https://devforum.roblox.com/t/jolt-a-high-performance-type-safe-and-developer-friendly-networking-library-for-roblox/4095212/1)
 - [RagdollService](https://devforum.roblox.com/t/ragdollservice-all-in-one-high-quality-ragdoll-solution/4255978)
